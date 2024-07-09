@@ -6,9 +6,8 @@ from PIL import Image
 import io
 
 # Define paths to the datasets
-training_set_path = r"C:\Users\parth sawant\Desktop\gemini compi\braintumor\trainingset"
-test_set_path = r'C:\Users\parth sawant\Desktop\gemini compi\braintumor\testset'
-
+training_set_path = "braintumor/trainingset"
+test_set_path = "braintumor/testset"
 # Preprocessing the Training set
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
     rescale=1./255,
